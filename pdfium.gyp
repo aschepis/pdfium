@@ -3,6 +3,13 @@
     'pdf_use_skia%': 0,
     'pdf_use_v8%': 1,
   },
+  'conditions': [
+    ['pdf_use_v8==1', {
+      'includes': [
+        'javascript.gypi'
+      ]
+    }]
+  ],
   'target_defaults': {
     'defines' : [
       'FOXIT_CHROME_BUILD',

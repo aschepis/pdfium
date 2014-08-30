@@ -9,6 +9,7 @@
 #define _FX_WIN32_DESKTOP_		1
 #define _FX_LINUX_DESKTOP_		4
 #define _FX_MACOSX_				7
+#define _FX_IOS_				8
 #define _FX_ANDROID_			12
 #define _FXM_PLATFORM_WINDOWS_		1
 #define _FXM_PLATFORM_LINUX_		2
@@ -25,8 +26,14 @@
 #define _FX_OS_ _FX_LINUX_DESKTOP_
 #define _FXM_PLATFORM_ _FXM_PLATFORM_LINUX_
 #elif defined(__APPLE__)
+#include <TargetConditionals.h>
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+#define _FX_OS_ _FX_IOS_
+#define _FXM_PLATFORM_ _FXM_PLATFORM_APPLE_
+#else
 #define _FX_OS_ _FX_MACOSX_
 #define _FXM_PLATFORM_ _FXM_PLATFORM_APPLE_
+#endif
 #endif
 #endif
 #if !defined(_FX_OS_) || _FX_OS_ == 0

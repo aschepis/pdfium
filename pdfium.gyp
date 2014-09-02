@@ -37,7 +37,7 @@
           'TARGETED_DEVICE_FAMILY': '1,2',
           'CODE_SIGN_IDENTITY': 'iPhone Developer',
           'IPHONEOS_DEPLOYMENT_TARGET': '7.1',
-          'ARCHS': '$(ARCHS_STANDARD_32_64_BIT)',
+          'ARCHS': 'armv7 armv7s',
           'ONLY_ACTIVE_ARCH': 'NO'
         }
       }],

@@ -4,6 +4,8 @@
 /out
 /v8
 /xcodebuild
+DerivedData
+build/DerivedData
 Makefile
 .DS_Store
 *.filters

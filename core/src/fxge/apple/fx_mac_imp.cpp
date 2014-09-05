@@ -6,7 +6,7 @@
 
 #include "../../../include/fxge/fx_ge.h"
 #include "apple_int.h"
-#if _FX_OS_ == _FX_MACOSX_
+#if _FX_OS_ == _FX_MACOSX_ || _FX_OS_ == _FX_IOS_
 static const struct {
     FX_LPCSTR	m_pName;
     FX_LPCSTR	m_pSubstName;

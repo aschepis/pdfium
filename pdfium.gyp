@@ -48,6 +48,12 @@
           'ONLY_ACTIVE_ARCH': 'NO'
         }
       }],
+      ['OS=="mac"', {
+        'xcode_settings': {
+          'ARCHS': 'x86_64 i386',
+          'ONLY_ACTIVE_ARCH': 'NO'
+        }
+      }],
     ],
     'msvs_disabled_warnings': [
       4005, 4018, 4146, 4333, 4345, 4267
